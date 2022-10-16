@@ -1,0 +1,274 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16314 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+D:/SchoolWork/Programs/Idaho Ford and the 2D Crusade
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+62015
+Successfully changed project path to: D:/SchoolWork/Programs/Idaho Ford and the 2D Crusade
+D:/SchoolWork/Programs/Idaho Ford and the 2D Crusade
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 86.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/SchoolWork/Programs/Idaho Ford and the 2D Crusade/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.1740
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009525 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 83.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.982 seconds
+Domain Reload Profiling:
+	ReloadAssembly (982ms)
+		BeginReloadAssembly (72ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (684ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (313ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (294ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005516 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\SchoolWork\Programs\Idaho Ford and the 2D Crusade\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\SchoolWork\Programs\Idaho Ford and the 2D Crusade\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 89.27 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.284 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1284ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1054ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (229ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (640ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (89ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (390ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4070 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (155.5 KB). Loaded Objects now: 4525.
+Memory consumption went from 151.8 MB to 151.6 MB.
+Total: 3.327800 ms (FindLiveObjects: 0.316300 ms CreateObjectMapping: 0.297900 ms MarkObjects: 2.611300 ms  DeleteObjects: 0.101800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 440381.694757 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/06/T_Water_Splash_6_3.png
+  artifactKey: Guid(a76a3a14c40f71e4588cf5d6c4eb9d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/06/T_Water_Splash_6_3.png using Guid(a76a3a14c40f71e4588cf5d6c4eb9d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1280894c0779f9e9ea4b53488f44982') in 0.207009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/09/T_Water_Splash_9_4.png
+  artifactKey: Guid(3f8f2ad8ffc3f864cbedec29ad5ebf6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/09/T_Water_Splash_9_4.png using Guid(3f8f2ad8ffc3f864cbedec29ad5ebf6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c380fba81a1085771f9074112ca13b5') in 0.053102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/07/T_Water_Splash_7_12.png
+  artifactKey: Guid(1e40443af0e6da5439d3f3b870f46e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/07/T_Water_Splash_7_12.png using Guid(1e40443af0e6da5439d3f3b870f46e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b39c17f70a6e54716542e2b658d1f1') in 0.087051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/10/T_Water_Splash_10_4.png
+  artifactKey: Guid(718be817da2d53c448b0d9d66acb1891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/10/T_Water_Splash_10_4.png using Guid(718be817da2d53c448b0d9d66acb1891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54a11b9bbf481fdc68e0cda3383b0e9c') in 0.026474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/10/T_Water_Splash_10_5.png
+  artifactKey: Guid(bc35d1739e141984b9b104b528bef7a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/10/T_Water_Splash_10_5.png using Guid(bc35d1739e141984b9b104b528bef7a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca46876ec954ad2f2376de8dccd05d2') in 0.021180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/08/T_Water_Splash_8_2.png
+  artifactKey: Guid(a35b9ffc48779004abc3b81c90a31f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/08/T_Water_Splash_8_2.png using Guid(a35b9ffc48779004abc3b81c90a31f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7bf56120f35ee10574289112fbca23') in 0.083747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/07/T_Water_Splash_7_17.png
+  artifactKey: Guid(3f6b36e75d6937d44a2ca9972a5137d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/07/T_Water_Splash_7_17.png using Guid(3f6b36e75d6937d44a2ca9972a5137d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c40546d89acebbd44a1032087d3a8e') in 0.061574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/07/T_Water_Splash_7_7.png
+  artifactKey: Guid(c7dd59e004b35f14a8684e51103a24f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/07/T_Water_Splash_7_7.png using Guid(c7dd59e004b35f14a8684e51103a24f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d326ba2af566c375aad5f9993a1760') in 0.057611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/07/T_Water_Splash_7_14.png
+  artifactKey: Guid(8ee77108d56e8f6478e9d4aa74bf62d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/07/T_Water_Splash_7_14.png using Guid(8ee77108d56e8f6478e9d4aa74bf62d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02af72a3a3f4f90364eb1d447f2c6d4d') in 0.052545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/06/T_Water_Splash_6_11.png
+  artifactKey: Guid(b7828122f32452740ac2cbf85896597f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/06/T_Water_Splash_6_11.png using Guid(b7828122f32452740ac2cbf85896597f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15b809edad977ee4dee1402c89440c1') in 0.063183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/06/T_Water_Splash_6_14.png
+  artifactKey: Guid(018847f3d94d3334098077c938807e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/06/T_Water_Splash_6_14.png using Guid(018847f3d94d3334098077c938807e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e275ea543aa85ce3ff5fee80b4a73430') in 0.063521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/10/T_Water_Splash_10_2.png
+  artifactKey: Guid(888ae1b8708172a40966b47934772d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/10/T_Water_Splash_10_2.png using Guid(888ae1b8708172a40966b47934772d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6420aed7e160c3e464ff56edf8b945c1') in 0.023303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/09/T_Water_Splash_9_2.png
+  artifactKey: Guid(56d217914c7cae04ebd49c80891a4db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/09/T_Water_Splash_9_2.png using Guid(56d217914c7cae04ebd49c80891a4db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22e07ec40e1be8a6b6279d696940744') in 0.056808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/06/T_Water_Splash_6_21.png
+  artifactKey: Guid(ece976dd0bc408443ae168e958dbfbaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/06/T_Water_Splash_6_21.png using Guid(ece976dd0bc408443ae168e958dbfbaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474f641d5583a42c3b6b92271d911a46') in 0.065082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/08/T_Water_Splash_8_3.png
+  artifactKey: Guid(7f5376a35da021d4a8926f42283b6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/08/T_Water_Splash_8_3.png using Guid(7f5376a35da021d4a8926f42283b6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c43924e3e2d845d13e258b3f80edc881') in 0.099550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/09/T_Water_Splash_9_12.png
+  artifactKey: Guid(9b0614f4e876c2b479e45d4a740d8508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/09/T_Water_Splash_9_12.png using Guid(9b0614f4e876c2b479e45d4a740d8508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77654edfea2f2630a9b4b940647b90ba') in 0.056381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/06/T_Water_Splash_6_17.png
+  artifactKey: Guid(be0c5f84afdc49b4abb417b7ac5270f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/06/T_Water_Splash_6_17.png using Guid(be0c5f84afdc49b4abb417b7ac5270f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e649c5a0fce09ec7a000b02eb060e4a7') in 0.070470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Effects/406pixel/Water_Splash_Pack/Sprite/09/T_Water_Splash_9_9.png
+  artifactKey: Guid(53ed134ce6fa7ae48b827b1113e681a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/406pixel/Water_Splash_Pack/Sprite/09/T_Water_Splash_9_9.png using Guid(53ed134ce6fa7ae48b827b1113e681a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa857ddbab66351c477454e0df34fea') in 0.051879 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
