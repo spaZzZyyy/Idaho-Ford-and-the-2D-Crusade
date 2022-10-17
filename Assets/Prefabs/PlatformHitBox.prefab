@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5188457927443728918}
   - component: {fileID: 535375298132703970}
   - component: {fileID: 189659849905775512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlatformHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

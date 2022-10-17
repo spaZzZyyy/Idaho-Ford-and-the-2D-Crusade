@@ -41,11 +41,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Enemies\Slime\Slime.cs" />
+     <Compile Include="Assets\Scripts\Map\WaterDropletTimers.cs" />
      <Compile Include="Assets\Credits.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Base\MonsterTemplate.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Interfaces\IMonsterAggro.cs" />
      <Compile Include="Assets\Scripts\Map\KillZones\KillZone_Kill.cs" />
      <Compile Include="Assets\Sprites\Packs\Enemy Galore 1 - Pixel Art\Script\EnemySelector.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Sprites\Packs\Enemy Galore 1 - Pixel Art\Script\EnemyTest.cs" />
-     <Compile Include="Assets\Scripts\Map\WaterDropletTimers.cs" />
      <None Include="Assets\Sprites\Packs\Enemy Galore 1 - Pixel Art\Read Me.txt" />
      <None Include="Assets\Sprites\Packs\Medieval_pixel_art_asset_FREE\pixel_snapping_README.txt" />
      <None Include="Assets\Effects\Pixel FX - Fire\Read Me.txt" />
