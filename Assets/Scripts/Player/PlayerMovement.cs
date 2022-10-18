@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D playerBody;
     private Vector2 velocity;
     private float velocitySpeed = 1f;
-    private float velocityY;
+    public float velocityY;
+    public static PlayerMovement Instance { get; private set; }
 
     //Adjustable movement Variables
     [SerializeField] private float jumpHeight;
@@ -22,6 +23,18 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = false;
     [SerializeField] Transform groundCheckCollider;
     [SerializeField] LayerMask groundLayer;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) 
+        { 
+            Destroy(this); 
+        } 
+        else 
+        { 
+            Instance = this; 
+        } 
+    }
 
     private void Start()
     {

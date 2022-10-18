@@ -51,6 +51,13 @@
      <Compile Include="Assets\Sprites\Packs\Enemy Galore 1 - Pixel Art\Script\EnemySelector.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Sprites\Packs\Enemy Galore 1 - Pixel Art\Script\EnemyTest.cs" />
+     <Compile Include="Assets\Scripts\Map\Switch.cs" />
+     <Compile Include="Assets\Scripts\Map\Ladder.cs" />
+     <Compile Include="Assets\Scripts\Player\LadderCheck.cs" />
+     <Compile Include="Assets\Scripts\Map\Bridge.cs" />
+     <Compile Include="Assets\Scripts\Map\Box.cs" />
+     <Compile Include="Assets\Scripts\Map\BoxFire.cs" />
+     <Compile Include="Assets\Scripts\Player\Death.cs" />
      <None Include="Assets\Sprites\Packs\Enemy Galore 1 - Pixel Art\Read Me.txt" />
      <None Include="Assets\Sprites\Packs\Medieval_pixel_art_asset_FREE\pixel_snapping_README.txt" />
      <None Include="Assets\Effects\Pixel FX - Fire\Read Me.txt" />

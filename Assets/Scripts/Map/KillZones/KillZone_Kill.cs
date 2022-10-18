@@ -13,6 +13,7 @@ public class KillZone_Kill : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             OnPlayerEnterKillZone?.Invoke(this, EventArgs.Empty);
+            Debug.Log("Died");
         }
     }
 }
