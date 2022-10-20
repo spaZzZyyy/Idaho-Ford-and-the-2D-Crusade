@@ -9,11 +9,10 @@ public class BoxFire : MonoBehaviour
     private void Start()
     {
         fireAni = GetComponent<Animator>();
-        Switch switchPull = GetComponent<Switch>();
-        switchPull.OnBoxTimerExpired += SwitchPullOnBoxTimerExpired;
+        SwitchTrigger.current.onBoxDiesInFire += CurrentOnonBoxDiesInFire;
     }
 
-    private void SwitchPullOnBoxTimerExpired(object sender, EventArgs e)
+    private void CurrentOnonBoxDiesInFire()
     {
         fireAni.SetTrigger("BoxDie");
     }

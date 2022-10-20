@@ -6,11 +6,8 @@ using UnityEngine;
 public class Switch : MonoBehaviour
 {
     Animator switchAnimator;
-    public event EventHandler OnSwitchPulled;
-    public event EventHandler OnBoxTimerExpired;
     private bool canPullSwitch;
     private bool bridgeSwitch;
-
     private void Start()
     {
         switchAnimator = GetComponent<Animator>();
@@ -33,19 +30,20 @@ public class Switch : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space) && canPullSwitch)
+        if (Input.GetKeyDown(KeyCode.E) && canPullSwitch == true)
         {
             Debug.Log("Switch Pulled");
+            SwitchTrigger.current.SwitchPulled();
             switchAnimator.SetBool("OnTriggered", true);
-            OnSwitchPulled?.Invoke(this, EventArgs.Empty);
             StartCoroutine(BridgeReset());
         }
+        
     }
 
     IEnumerator BridgeReset()
     {
         yield return new WaitForSeconds(3);
         switchAnimator.SetBool("OnTriggered", false);
-        OnBoxTimerExpired?.Invoke(this, EventArgs.Empty);
+        SwitchTrigger.current.boxDeath();
     }
 }

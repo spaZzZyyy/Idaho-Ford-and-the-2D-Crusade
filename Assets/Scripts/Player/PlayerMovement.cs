@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 velocity;
     private float velocitySpeed = 1f;
     public float velocityY;
+    private Animator m_animator;
+    private float playerDirection;
     public static PlayerMovement Instance { get; private set; }
 
     //Adjustable movement Variables
@@ -20,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     
     //Variables for Groundcheck
     private const float _groundCheckRadius = 0.2f;
-    private bool isGrounded = false;
+    public bool isGrounded = false;
     [SerializeField] Transform groundCheckCollider;
     [SerializeField] LayerMask groundLayer;
 
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        m_animator = GetComponent<Animator>();
         playerBody = GetComponent<Rigidbody2D>();
         playerBody.transform.position = new Vector2(-8.1f, 0.68f);
         velocity = new Vector2(velocitySpeed, velocityY);
@@ -47,19 +50,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
+            m_animator.SetFloat("AnimState", 1f);
             MoveRight();
         }
 
         if (Input.GetKey((KeyCode.A)))
         {
+            m_animator.SetFloat("AnimState", 1f);
             MoveLeft();
         }
 
-        if (Input.GetKey(KeyCode.S))
-        {
-            Crouch();
-        }
-        
         if (Input.GetKeyDown(KeyCode.W))
         {
             Jump();
@@ -74,25 +74,24 @@ public class PlayerMovement : MonoBehaviour
 
     void MoveRight()
     {
+        GetComponent<SpriteRenderer>().flipX = false;
         velocitySpeed = 1f;
         playerBody.MovePosition(playerBody.position + velocity * Time.fixedDeltaTime * movementSpeed);
     }
 
     void MoveLeft()
     {
+        GetComponent<SpriteRenderer>().flipX = true;
         velocitySpeed = -1f;
         playerBody.MovePosition(playerBody.position + velocity * Time.fixedDeltaTime * movementSpeed);
     }
-
-    void Crouch()
-    {
-        
-    }
-
+    
     void Jump()
     {
         if (isGrounded == true)
         {
+            m_animator.SetTrigger("Jump");
+            m_animator.SetBool("Grounded", false);
             Vector2 apexJump = playerBody.position + new Vector2(0, jumpHeight);
             transform.position = Vector2.Lerp(transform.position, apexJump, jumpSpeed);
         }
@@ -105,12 +104,14 @@ public class PlayerMovement : MonoBehaviour
         if (colliders.Length > 0)
         {
             isGrounded = true;
+            m_animator.SetBool("Grounded", true);
         }
     }
 
     void updateMovement()
     {
         velocityY = -1f;
+        m_animator.SetFloat("AirSpeedY", -1);
         velocity = new Vector2(velocitySpeed, velocityY);
     }
 

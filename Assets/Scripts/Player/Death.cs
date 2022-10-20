@@ -8,17 +8,28 @@ public class Death : MonoBehaviour
 {
 
     [SerializeField] int TimeAfterDeath;
+
+    private Animator m_animator;
     // Start is called before the first frame update
     void Start()
     {
-        KillZone_Kill deathZone = GetComponent<KillZone_Kill>();
-        if (deathZone != null)
-        {
-            deathZone.OnPlayerEnterKillZone += DeathZoneOnOnPlayerEnterKillZone;
-        }
+        m_animator = GetComponent<Animator>();
+        KillZone_Kill.killZone.OnPlayerEnterKillZone += KillZoneOnOnPlayerEnterKillZone;
+        Kill.kill.OnPlayerKill += KillOnOnPlayerKill;
+        BatKill.batKill.killPlayerBat += BatKillOnkillPlayerBat;
+    }
+    
+    private void BatKillOnkillPlayerBat()
+    {
+        StartCoroutine(OnDeath());
     }
 
-    private void DeathZoneOnOnPlayerEnterKillZone(object sender, EventArgs e)
+    private void KillOnOnPlayerKill()
+    {
+        StartCoroutine(OnDeath());
+    }
+
+    private void KillZoneOnOnPlayerEnterKillZone()
     {
         StartCoroutine(OnDeath());
     }
@@ -30,6 +41,7 @@ public class Death : MonoBehaviour
 
     IEnumerator OnDeath()
     {
+        m_animator.SetTrigger("Death");
         yield return new WaitForSeconds(TimeAfterDeath);
         LoadCurrentScene();
     }

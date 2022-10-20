@@ -4,37 +4,33 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public abstract class MonsterTemplate : MonoBehaviour, IMonsterAggro
+public abstract class MonsterTemplate : MonoBehaviour
 {
-    public int healthPoints;
-    public float monsterSpeed;
-    public float monsterRangeHorizontal;
-    public Vector3 playerPosition;
-    public int playerHealth = PlayerStats.Instance.playerHealth;
-    private Animator monsterAnimator;
-    [SerializeField] private float distanceToPlayer;
+    protected Rigidbody2D monsterBody;
+    protected float monsterSpeed;
+    protected bool _direction;
 
-    public void StartUp()
+    protected void OnMoveRight(Rigidbody2D monsterRigidbody)
     {
-        monsterAnimator = GetComponent<Animator>();
+        Debug.Log("MovingRight");
+        monsterRigidbody.AddForce(Vector2.right * (Time.fixedDeltaTime * monsterSpeed));
+        transform.localScale = new Vector3(2, transform.localScale.y, transform.localScale.z);
     }
-    public void Patrol()
+    
+    protected void OnMoveLeft(Rigidbody2D monsterRigidbody)
     {
-        playerPosition = PlayerStats.Instance.playerPosition;
-        distanceToPlayer = Vector3.Distance(playerPosition, transform.position);
-        if (distanceToPlayer <= monsterRangeHorizontal)
-        {
-            //Aggro to player
-            monsterAnimator.SetTrigger("IsAggroed");
-        }
-        if (distanceToPlayer > monsterRangeHorizontal)
-        {
-            monsterAnimator.SetTrigger("LostAggro");
-        }
+        monsterRigidbody.AddForce(Vector2.left * (Time.fixedDeltaTime * monsterSpeed));
+        transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
     }
-
-    public void Attack()
+    
+    protected void OnDirectionChange()
     {
-        return;
+        if (_direction == true)
+        {
+            _direction = false;
+        } else if (_direction == false)
+        {
+            _direction = true;
+        }
     }
 }

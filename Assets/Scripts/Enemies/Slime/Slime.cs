@@ -1,22 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using System.IO;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
+using Update = Unity.VisualScripting.Update;
 
-public class Slime : MonsterTemplate
+public class Slime : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        StartUp();
+        if (col.CompareTag("Player"))
+        {
+            KillZone_Kill.killZone.enteredDeath();
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Patrol();
-        
-    }
-    
-    
 }

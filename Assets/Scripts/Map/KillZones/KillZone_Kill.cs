@@ -5,15 +5,23 @@ using UnityEngine;
 
 public class KillZone_Kill : MonoBehaviour
 {
-    public event EventHandler OnPlayerEnterKillZone;
-    //Script design to kill the player if they enter this zone
-    //This script sends an event that shows the player Entered the Killzone
+    public static KillZone_Kill killZone;
+    public bool playerAlive = true;
+    private void Awake()
+    {
+        killZone = this;
+    }
+
+    public event Action OnPlayerEnterKillZone;
+
+    public void enteredDeath()
+    {
+        playerAlive = false;
+        OnPlayerEnterKillZone?.Invoke();
+    }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
-        {
-            OnPlayerEnterKillZone?.Invoke(this, EventArgs.Empty);
-            Debug.Log("Died");
-        }
+        enteredDeath();
     }
 }
